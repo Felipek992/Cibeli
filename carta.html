@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="pagina-carta">
+<audio id="musica" autoplay loop>
+  <source src="Os Morenos - Marrom Bombom (Pseudo Video) (Pseudo Video)(MP3_160K).mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio HTML5.
+</audio>
 
   <div class="carousel" id="carousel">
     <div class="slide">
@@ -27,5 +31,15 @@
   </div>
 
   <script src="carousel.js"></script>
+  
+  <script>
+  window.addEventListener('load', () => {
+    const musica = document.getElementById('musica');
+    musica.volume = 0.4; // volume entre 0.0 e 1.0
+    musica.play().catch((e) => {
+      console.log("O navegador bloqueou o autoplay. O usuário deve interagir com a página primeiro.");
+    });
+  });
+</script>
 </body>
 </html>
