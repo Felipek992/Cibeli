@@ -80,8 +80,8 @@ body, html {
 }
 
 .slide p {
-  margin-top: 5px;
-  font-size: 2.0em;
+  margin-top: 10px;
+  font-size: 5.0em;
   color: #333;
   font-weight: bold;
 }
